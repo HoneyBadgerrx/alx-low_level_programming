@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
+ * main - entry point
+ * function_name - print_str
  *
- * return = 0, successful
+ * Description: Prints value of char
+ * section header: main section
+ * Return: 0
  */
 int main(void)
 {
