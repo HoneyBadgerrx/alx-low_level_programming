@@ -14,8 +14,11 @@ int main(void)
 	while (x <= y)
 	{
 		putchar(x);
-		putchar(',');
-		putchar(' ');
+		if (x != y)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		++x;
 	}
 	putchar('\n');
