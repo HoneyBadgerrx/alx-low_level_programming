@@ -11,11 +11,13 @@ int main(void)
 	int x = '0';
 	int y;
 	int final_no = '8';
+	int max_y = '9';
 
 	while (x <= final_no)
 	{
-		y = x + 1;
-		while (y <= 9)
+		y = x;
+		++y;
+		while (y <= max_y)
 		{
 			putchar(x);
 			putchar(y);
@@ -23,8 +25,8 @@ int main(void)
 			{
 				putchar(',');
 				putchar(' ');
-				++y;
 			}
+			++y;
 		}
 		++x;
 	}
