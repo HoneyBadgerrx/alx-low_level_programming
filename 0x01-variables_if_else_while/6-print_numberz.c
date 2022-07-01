@@ -9,9 +9,9 @@
 int main(void)
 {
 	int x = '0';
-	int y = '10';
+	int y = '9';
 
-	while (x < y)
+	while (x <= y)
 	{
 		putchar(x);
 		++x;
