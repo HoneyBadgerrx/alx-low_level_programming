@@ -11,9 +11,9 @@ int main(void)
 	int x = '0';
 	int y;
 	int z;
-	int max_x = '8';
-	int max_y = '9';
-	int max_z - '9';
+	int max_x = '7';
+	int max_y = '8';
+	int max_z = '9';
 
 	while (x <= max_x)
 	{
@@ -21,12 +21,20 @@ int main(void)
 		++y;
 		while (y <= max_y)
 		{
-			putchar(x);
-			putchar(y);
-			if (x != max_x)
-			{
+			
+			while (z <= max_z)
+			{		
+				z = y;
+				++z;
+				if (x != max_x && y != max_y && z != max_z)
+				{
+				putchar(x);
+				putchar(y);
+				putchar(z);
 				putchar(',');
 				putchar(' ');
+				}
+				++z;
 			}
 			++y;
 		}
