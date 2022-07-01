@@ -11,7 +11,7 @@ int main(void)
 	int x = 0;
 	int y = 10;
 
-	while (x <= y)
+	while (x < y)
 	{
 		printf("%d", x);
 		++x;
