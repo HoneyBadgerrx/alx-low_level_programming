@@ -14,8 +14,7 @@ int main(void)
 
 	while (x <= final_no)
 	{
-		y = x;
-		++y;
+		y = x + 1;
 		while (y <= 9)
 		{
 			putchar(x);
