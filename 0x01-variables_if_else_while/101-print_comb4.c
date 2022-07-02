@@ -24,7 +24,7 @@ int main(void)
 			z = y;
 			++z;
 			while (z <= max_z)
-			{		
+			{
 				putchar(x);
 				putchar(y);
 				putchar(z);
