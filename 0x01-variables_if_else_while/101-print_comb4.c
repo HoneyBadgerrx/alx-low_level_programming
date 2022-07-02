@@ -21,18 +21,17 @@ int main(void)
 		++y;
 		while (y <= max_y)
 		{
-			
+			z = y;
+			++z;
 			while (z <= max_z)
 			{		
-				z = y;
-				++z;
-				if (x != max_x && y != max_y && z != max_z)
-				{
 				putchar(x);
 				putchar(y);
 				putchar(z);
-				putchar(',');
-				putchar(' ');
+				if (x != max_x)
+				{
+					putchar(',');
+					putchar(' ');
 				}
 				++z;
 			}
