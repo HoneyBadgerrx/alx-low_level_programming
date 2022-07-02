@@ -1,6 +1,5 @@
 #include <unistd.h>
-#include <sys/syscall.h>
-
+#include <stdio.h>
 /**
  * main - entry point
  * function_name - no_print
@@ -11,9 +10,8 @@
  */
 int main(void)
 {
-	const char msg[] =
-"and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char s[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
-	syscall(SYS_write, 2, msg, sizeof(msg));
+	fwrite(s, 1, sizeof(s), stderr);
 	return (1);
 }
