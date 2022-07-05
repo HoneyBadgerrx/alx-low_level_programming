@@ -1,3 +1,4 @@
+#include "main.h"
 /**
   * main - entry point
   * function_name - put_char
