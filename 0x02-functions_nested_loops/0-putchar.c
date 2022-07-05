@@ -1,10 +1,10 @@
 #include <stdio.h>
 /*
  * main - entry point
- * function_name -
+ * function_name - print_putchar
  *
- * Description:
- * Return:
+ * Description: Prints putchar
+ * Return: 0
  */
 int main(void)
 {
