@@ -6,8 +6,9 @@
  * Description: prints abc, no pq
  * Return: 0
  */
-int main(void)
+void print_alphabet()
 {
+
 	int x = 'a';
 	int y = 'z';
 
@@ -19,6 +20,9 @@ int main(void)
 		}
 		++x;
 	}
+}
+int main(void)
+{
 	putchar('\n');
 	return (0);
 }
