@@ -21,8 +21,3 @@ void print_alphabet()
 		++x;
 	}
 }
-int main(void)
-{
-	putchar('\n');
-	return (0);
-}
