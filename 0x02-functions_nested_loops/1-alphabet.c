@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - entry point
- * function_name - no_pq
- *
- * Description: prints abc, no pq
- * Return: 0
- */
-void print_alphabet()
+  * function_name - print_alpha
+  *
+  * Return: nothing
+  **/
+
+void print_alphabets(void)
 {
 
 	int x = 'a';
@@ -14,10 +14,8 @@ void print_alphabet()
 
 	while (x <= y)
 	{
-		if ((x != 'q') && (x != 'e'))
-		{
-			putchar(x);
-		}
+		_putchar('x');
 		++x;
 	}
+	_putchar('\n');
 }

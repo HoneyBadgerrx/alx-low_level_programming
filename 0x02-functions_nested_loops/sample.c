@@ -1,11 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 /**
-  * main - entry point
-  * function_name -
+  * function_name - print_alpha
   *
-  * Description:
-  * Return:
-  */
-int main(void)
+  * Return: nothing
+  **/
+
+
 {
 
