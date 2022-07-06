@@ -20,6 +20,8 @@ void jack_bauer(void)
 		{
 			while (min1 < 6)
 			{
+				min = 0;
+
 				while (min < 10)
 				{
 					_putchar('0' + h1);
