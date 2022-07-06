@@ -3,6 +3,7 @@
 /**
   * function_name - print_alpha
   *
+  * Description: prints alphabets
   * Return: nothing
   **/
 
@@ -14,7 +15,7 @@ void print_alphabet(void)
 
 	while (x <= y)
 	{
-		_putchar('x');
+		_putchar(x);
 		++x;
 	}
 	_putchar('\n');
