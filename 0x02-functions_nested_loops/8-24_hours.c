@@ -18,10 +18,12 @@ void jack_bauer(void)
 	{
 		h = 0;
 
-		while (h < 4)
+		while (h < 10)
 		{
 			min1 = 0;
 
+			if ((h1 = 2) & (h = 4))
+				break;
 			while (min1 < 6)
 			{
 				min = 0;
@@ -33,8 +35,7 @@ void jack_bauer(void)
 					_putchar(':');
 					_putchar('0' + min1);
 					_putchar('0' + min);
-					if ((h1 != 2) & (h != 3) & (min1 !=5) & (min != 9))
-						_putchar('\n');
+					_putchar('\n');
 					++min;
 				}
 				++min1;
