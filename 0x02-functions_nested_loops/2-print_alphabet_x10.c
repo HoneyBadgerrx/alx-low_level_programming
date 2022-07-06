@@ -11,16 +11,17 @@
 /* prints alphabet 10 times*/
 void print_alphabet_x10(void)
 {
-	for (int i = 0, i < 10, i++)
+	while (int i < 10)
 	{
-	int x = 'a';
-	int y = 'z';
+		int x = 'a';
+		int y = 'z';
 
-	while (x <= y)
-	{
-		_putchar(x);
-		++x;
-	}
-	_putchar('\n');
+		while (x <= y)
+		{
+			_putchar(x);
+			++x;
+		}
+		_putchar('\n');
+		++i;
 	}
 }
