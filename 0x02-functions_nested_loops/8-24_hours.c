@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * jack_bauer() - prins time
+  * jack_bauer - prins time
   *
   * Description: print min in  aday
   * Return: 0
@@ -22,11 +22,11 @@ void jack_bauer(void)
 			{
 				while (min < 10)
 				{
-					_putchar(h1);
-					_putchar(h);
+					_putchar('0' + h1);
+					_putchar('0' + h);
 					_putchar(':');
-					_putchar(min1);
-					_putchar(min);
+					_putchar('0' + min1);
+					_putchar('0' + min);
 					_putchar('\n');
 					++min;
 				}
