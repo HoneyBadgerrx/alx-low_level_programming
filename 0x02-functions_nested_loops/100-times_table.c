@@ -9,6 +9,7 @@
 /*times table*/
 void print_times_table(int n)
 {
+	int n = n;
+
 	_putchar('\n');
-	return (n);
 }
