@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * times_table - times table
+  * print_times_table - times table
   *
   * @n: does stuff
   * Return: void
