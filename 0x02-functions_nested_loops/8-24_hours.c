@@ -9,31 +9,31 @@
 /*print time*/
 void jack_bauer(void)
 {
-	int 0hour = 0;
-	int 1hour = 0;
+	int h = 0;
+	int h1 = 0;
 	int min = 0;
-	int 1min = 0;
+	int min1 = 0;
 
-	while (1hour < 3)
+	while (h1 < 3)
 	{
-		while (0hour < 4)
+		while (h < 4)
 		{
-			while (1min < 6)
+			while (min1 < 6)
 			{
 				while (min < 10)
 				{
-					_putchar(1hour);
-					_putchar(0hour);
+					_putchar(h1);
+					_putchar(h);
 					_putchar(':');
-					_putchar(1min);
+					_putchar(min1);
 					_putchar(min);
 					_putchar('\n');
 					++min;
 				}
-				++1min;
+				++min1;
 			}
-			++0hour;
+			++h;
 		}
-		++1hour;
+		++h1;
 	}
 }
