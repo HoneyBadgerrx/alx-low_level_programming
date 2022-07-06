@@ -22,14 +22,14 @@ void jack_bauer(void)
 		{
 			min1 = 0;
 
-			if ((h1 = 2) & (h = 4))
-				break;
 			while (min1 < 6)
 			{
 				min = 0;
 
 				while (min < 10)
 				{
+					if ((h1 = 2) & (h >3))
+						break;
 					_putchar('0' + h1);
 					_putchar('0' + h);
 					_putchar(':');
