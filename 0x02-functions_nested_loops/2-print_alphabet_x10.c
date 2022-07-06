@@ -11,7 +11,8 @@
 /* prints alphabet 10 times*/
 void print_alphabet_x10(void)
 {
-	while (int i < 10)
+	int i = 0;
+	while (i < 10)
 	{
 		int x = 'a';
 		int y = 'z';
