@@ -4,8 +4,9 @@
  *
  * Return: 0
  */
+
+/* test main*/
 int main(void)
 {
-	positive_or_negative();
 	return (0);
 }
