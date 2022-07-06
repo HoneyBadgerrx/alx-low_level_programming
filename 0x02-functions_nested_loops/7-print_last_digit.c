@@ -7,11 +7,15 @@
   * Return: int
   **/
 
-/*print abs*/
+/*print last digit*/
 int print_last_digit(int c)
 {
+	int ans;
+
 	if (c < 0)
 		c = c * -1;
 	c = c % 10;
-	return (c);
+
+	ans = c + (c * 10);
+	return (ans);
 }
