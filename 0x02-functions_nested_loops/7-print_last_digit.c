@@ -10,9 +10,11 @@
 /*print abs*/
 int print_last_digit(int c)
 {
+	char ans[];
+
 	if (c < 0)
 		c = c * -1;
 	c = c % 10;
-	return (c);
+	ans = ("%d%d", c, c);
 	return (c);
 }
