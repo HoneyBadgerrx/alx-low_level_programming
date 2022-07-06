@@ -27,12 +27,9 @@ void jack_bauer(void)
 				min = 0;
 
 				while (min < 10)
-				{	
-					/*if ((h1 = 2))
-					{
-						if ((h > 3))
-							break;
-					}*/
+				{
+					if ((h1 = 2) && (h > 4))
+						break;
 					_putchar('0' + h1);
 					_putchar('0' + h);
 					_putchar(':');
