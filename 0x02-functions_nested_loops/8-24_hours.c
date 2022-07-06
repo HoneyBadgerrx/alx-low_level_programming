@@ -16,7 +16,7 @@ void jack_bauer(void)
 
 	while (h1 < 3)
 	{
-		if ((h1 = 2) $ (h > 4))
+		if ((h1 = 2) & (h > 4))
 			break;
 
 		h = 0;
