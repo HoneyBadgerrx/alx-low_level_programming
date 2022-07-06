@@ -10,7 +10,7 @@
 /*print lowercase*/
 int _islower(int c)
 {
-	if ((c <= 122) | (c >= 97))
+	if ((c <= 122) & (c >= 97))
 	{
 		return (1);
 	}
