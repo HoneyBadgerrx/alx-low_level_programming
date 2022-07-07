@@ -10,21 +10,28 @@ void more_numbers(void)
 {
 	int a = 0;
 	int b = 0;
+	int c = 0;
 
-	while (a < 2)
+	while (c < 10)
 	{
-		b = 0;
-
-		while (b < 10)
+		a = 0;
+		
+		while (a < 2)
 		{
-			if ((a >= 1) && (b >= 5))
-					break;
-			if (a == 1)
-				_putchar('0' + a);
-			_putchar('0' + b);
-			++b;
+			b = 0;
+
+			while (b < 10)
+			{
+				if ((a >= 1) && (b >= 5))
+						break;
+				if (a == 1)
+					_putchar('0' + a);
+				_putchar('0' + b);
+				++b;
+			}
+			++a;
 		}
-		++a;
+		_putchar('\n');
+		++c;
 	}
-	_putchar('\n');
 }
