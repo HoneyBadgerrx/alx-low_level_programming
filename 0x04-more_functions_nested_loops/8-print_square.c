@@ -9,7 +9,6 @@
 void print_square(int size)
 {
 	int a = 1;
-	int b = 1;
 
 	if (size > 0)
 	{
