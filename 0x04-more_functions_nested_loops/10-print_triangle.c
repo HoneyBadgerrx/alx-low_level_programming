@@ -24,22 +24,18 @@ void print_triangle(int size)
 
 				while (c > 0)
 				{
-					putchar(' ');
+					_putchar(' ');
 					--c;
 					++a;
 				}
-				putchar('#');
+				_putchar('#');
 				++a;
 			}
-			putchar('\n');
+			_putchar('\n');
 			--b;
 		}
 
 	}
 	else
-		putchar('\n');
-}
-void main(void)
-{
-	print_triangle(10);
+		_putchar('\n');
 }
