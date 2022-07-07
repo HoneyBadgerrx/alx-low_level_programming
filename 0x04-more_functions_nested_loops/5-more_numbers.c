@@ -17,9 +17,9 @@ void more_numbers(void)
 
 		while (b < 10)
 		{
-			if ((a >= 1) && (b >=5)
+			if ((a >= 1) && (b >= 5)
 					break;
-			if (a = 1)
+			if (a == 1)
 				_putchar('0' + a);
 			_putchar('0' + b);
 			++b;
