@@ -10,8 +10,9 @@
 /* _isupper checks */
 int _isupper(int c)
 {
-	if ((c >= 65) || ((c <= 90)))
-		return (1);
+	if ((c >= 65) || (c <= 90))
+		c = 1;
 	else
-		return (0);
+		c = 0;
+	return (c);
 }
