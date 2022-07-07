@@ -4,9 +4,9 @@
  * main - fizzbuzz
  *
  * Description: Fizzbuzz
- * Return: nil
+ * Return: 0
  */
-void main(void)
+int main(void)
 {
 	int a = 1;
 
@@ -24,5 +24,5 @@ void main(void)
 		++a;
 	}
 	putchar('\n');
-
+	return (0);
 }
