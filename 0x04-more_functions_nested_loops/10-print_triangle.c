@@ -17,25 +17,29 @@ void print_triangle(int size)
 		while (b > 0)
 		{
 			a = 1;
+			c = b - 1;
 
 			while (a <= size)
 			{
-				c = size - a;
 
 				while (c > 0)
 				{
-					_putchar(' ');
+					putchar(' ');
 					--c;
 					++a;
 				}
-				_putchar('#');
+				putchar('#');
 				++a;
 			}
-			_putchar('\n');
+			putchar('\n');
 			--b;
 		}
 
 	}
 	else
-		_putchar('\n');
+		putchar('\n');
+}
+void main(void)
+{
+	print_triangle(10);
 }
