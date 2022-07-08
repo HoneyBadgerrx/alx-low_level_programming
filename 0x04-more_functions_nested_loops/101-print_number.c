@@ -8,15 +8,14 @@
  */
 void print_number(int n)
 {
-	long int b = n;
-
-	if (b < 0)
+	if (n < 0)
 	{
-		b = b * -1;
-		_putchar('-');
+		n = n * -1;
+		if (n != INT_MIN)
+			_putchar('-');
 	}
 
-	if (b / 10)
-		print_number(b / 10);
-	_putchar('0' + (b % 10));
+	if (n / 10)
+		print_number(n / 10);
+	_putchar('0' + (n % 10));
 }
