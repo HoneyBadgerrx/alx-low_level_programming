@@ -34,9 +34,12 @@ void times_table(void)
 			}
 			else
 				_putchar('0' + mul);
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			if (a != n)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
 			++a;
 		}
 		_putchar('\n');
