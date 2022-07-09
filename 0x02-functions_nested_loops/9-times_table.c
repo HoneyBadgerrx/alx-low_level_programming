@@ -8,14 +8,13 @@
 /*times table*/
 void times_table(void)
 {
-	int a = 0;
 	int i = 0;
 	int n = 9;
 	int mul;
 
 	while (i <= n)
 	{
-		a = 0;
+		int a = 0;
 
 		while (a <= n)
 		{
@@ -23,6 +22,8 @@ void times_table(void)
 
 			if ((mul > 9) && (mul < 100))
 			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar('0' + ((mul / 10) % 10));
 				_putchar('0' + (mul % 10));
 			}
@@ -32,14 +33,15 @@ void times_table(void)
 				_putchar('0' + ((mul / 10) % 10));
 				_putchar('0' + (mul % 10));
 			}
-			else
-				_putchar('0' + mul);
-			if (a != n)
+			else if ((mul < 10) && (mul > 0))
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				_putchar('0' + mul);
 			}
+			else
+				_putchar('0');
 			++a;
 		}
 		_putchar('\n');
