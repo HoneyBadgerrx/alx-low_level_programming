@@ -17,7 +17,7 @@ void times_table(void)
 	{
 		a = 0;
 
-		while (a <= n);
+		while (a <= n)
 		{
 			mul = i * a;
 
@@ -41,3 +41,4 @@ void times_table(void)
 		}
 		++i;
 	}
+}
