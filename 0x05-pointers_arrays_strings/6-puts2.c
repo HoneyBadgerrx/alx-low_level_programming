@@ -7,7 +7,7 @@
  */
 void puts2(char *str)
 {
-	int len = srlen(str);
+	int len = strlen(str);
 	int i = 0;
 
 	while (i <= (len - 1))
