@@ -12,7 +12,7 @@ void print_rev(char *s)
 
 	while ((len - i) >= 0)
 	{
-		printf('%c', s[len - i]);
+		putchar(s[len - i]);
 		++i;
 	}
 	putchar('\n');
