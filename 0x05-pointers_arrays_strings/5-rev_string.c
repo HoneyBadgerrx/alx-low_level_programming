@@ -9,7 +9,7 @@ void rev_string(char *s)
 {
 	int len = strlen(s);
 	int i = 1;
-	char copy[] = "rando";
+	char copy[strlen(s)];
 
 	strcpy(copy, s);
 	while ((len - i) >= 0)
