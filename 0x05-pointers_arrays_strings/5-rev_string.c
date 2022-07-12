@@ -9,11 +9,12 @@ void rev_string(char *s)
 {
 	int len = strlen(s);
 	int i = 1;
+	char copy[] = "rando";
 
+	strcpy(copy, s);
 	while ((len - i) >= 0)
 	{
-		putchar(s[len - i]);
+		s[i - 1] = copy[len - i];
 		++i;
 	}
-	putchar('\n');
 }
