@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts_array - prints n number of array
+ * print_array - prints n number of array
  *
  * @n: integer
  * @a: any string
@@ -13,7 +13,7 @@ void print_array(int *a, int n)
 	while (i <= (n - 1))
 	{
 		printf("%d", a[i]);
-		if (i != (n = 1))
+		if (i != (n - 1))
 		{
 			putchar(',');
 			putchar(' ');
