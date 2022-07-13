@@ -8,4 +8,5 @@
 int _atoi(char *s)
 {
 	int nb = atoi(s);
+	return (nb);
 }
