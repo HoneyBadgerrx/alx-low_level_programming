@@ -2,17 +2,17 @@
 /**
  * cap_string - cpas evry word
  *
- * @src: source string
+ * @src: source srcing
  * Return: char
  */
 
-char *cap_string(char *)
+char *cap_string(char *src)
 {
 	int i;
 
 	for (i = 0; src[i] != '\0'; ++i)
 	{
-		if (str[index - 1] == ' ' || str[index - 1] == '\t' || str[index - 1] == '\n' || str[index - 1] == ',' || str[index - 1] == ';' || str[index - 1] == '.' || str[index - 1] == '!' || str[index - 1] == '?' || str[index - 1] == '"' || str[index - 1] == '(' || str[index - 1] == ')' || str[index - 1] == '{' || str[index - 1] == '}')
+		if (src[i - 1] == ' ' || src[i - 1] == '\t' || src[i - 1] == '\n' || src[i - 1] == ',' || src[i - 1] == ';' || src[i - 1] == '.' || src[i - 1] == '!' || src[i - 1] == '?' || src[i - 1] == '"' || src[i - 1] == '(' || src[i - 1] == ')' || src[i - 1] == '{' || src[i - 1] == '}')
 			src[i] -= 32;
 	}
 	return (src);
