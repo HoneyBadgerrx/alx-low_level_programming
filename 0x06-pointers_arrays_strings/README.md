@@ -1,0 +1,1 @@
+The functions affect strings
