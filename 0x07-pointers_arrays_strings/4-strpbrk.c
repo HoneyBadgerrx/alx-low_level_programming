@@ -4,13 +4,13 @@
  *
  * @s: character to search in
  * @accept: string to be searched for
- * Return: unsigned int
+ * Return: pointer to char
  */
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i;
-	unsigned int v;
-	unsigned int p = 0;
+	int i;
+	int v;
+	int p;
 
 	for (i = 0; accept[i] != '\0'; ++i)
 	{
