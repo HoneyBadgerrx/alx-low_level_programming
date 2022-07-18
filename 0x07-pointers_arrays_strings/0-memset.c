@@ -1,13 +1,13 @@
 #include "main.h"
 
-/*
- * _memset - sets mem value
- *
- * @n: amount of memory to alter
- * @s: pointer to memory
- * @b: character to place in memory
- * Return: pointer to char
- */
+/**
+  * _memset - sets mem value
+  *
+  * @n: amount of memory to alter
+  * @s: pointer to memory
+  * @b: character to place in memory
+  * Return: pointer to char
+  */
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i = 0;
