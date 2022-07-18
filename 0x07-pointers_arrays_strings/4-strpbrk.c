@@ -10,7 +10,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i;
 	int v;
-	int p;
+	int p = 0;
 
 	for (i = 0; accept[i] != '\0'; ++i)
 	{
@@ -20,9 +20,9 @@ char *_strpbrk(char *s, char *accept)
 			{
 				if (p > v)
 					p = v;
-				break;
+				return (s + p);
 			}
 		}
 	}
-	return (s + p);
+	return ('\0');
 }
