@@ -18,8 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (accept[i] == s[v])
 			{
-				if (p <= v)
-					p = v + 1;
+				p++;
 				break;
 			}
 		}
