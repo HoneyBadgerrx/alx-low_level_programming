@@ -24,5 +24,7 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-	return (s + p);
+	if (p != strlen)
+		return (s + p);
+	return (NULL);
 }
