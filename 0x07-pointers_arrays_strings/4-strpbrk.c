@@ -10,7 +10,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i;
 	int v;
-	int p = 0;
+	int p = strlen(s);
 
 	for (i = 0; accept[i] != '\0'; ++i)
 	{
@@ -18,13 +18,11 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accept[i] == s[v])
 			{
-				if (p == 0)
-					p = v;
 				if (p > v)
 					p = v;
-				return (s + p);
+				break;
 			}
 		}
 	}
-	return ('\0');
+	return (s + p);
 }
