@@ -10,7 +10,8 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i;
 	int v;
-	int p = strlen(s);
+	char *p = NULL;
+	int counter = strlen(s);
 
 	for (i = 0; accept[i] != '\0'; ++i)
 	{
@@ -18,11 +19,33 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accept[i] == s[v])
 			{
-				if (p > v)
-					p = v;
-				return (s + p);
+				if (counter > v)
+				{
+					p = &s[v];
+					counter = v;
+				}
+				break;
 			}
 		}
 	}
-	return (NULL);
+	return (p);
+}
+int main(void)
+
+{
+
+		char *s = "First, solve the problem. Then, write the code.";
+
+			char *f = "School";
+
+				char *t;
+
+
+
+					t = _strpbrk(s, f);
+
+						printf("%s\n", (t == NULL ? "nil" : t));
+
+							return (0);
+
 }
