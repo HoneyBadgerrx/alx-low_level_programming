@@ -20,11 +20,9 @@ char *_strpbrk(char *s, char *accept)
 			{
 				if (p > v)
 					p = v;
-				break;
+				return (s + p);
 			}
 		}
 	}
-	if (p != strlen)
-		return (s + p);
 	return (NULL);
 }
