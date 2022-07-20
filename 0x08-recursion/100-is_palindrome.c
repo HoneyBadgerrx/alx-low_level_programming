@@ -8,7 +8,6 @@
  */
 int helperpalin(char *s, int len)
 {
-/*	printf("%c %d\n", *s, len); */
 	if (len <= 0)
 		return (1);
 	if (*s != s[len])
