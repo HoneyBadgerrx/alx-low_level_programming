@@ -10,7 +10,7 @@ int helperfunc(int n, int root)
 		return(root);
 	if (root >= n / 2)
 		return (-1);
-	helperfunc(n, root + 1);
+	return (helperfunc(n, root + 1));
 }
 
 int _sqrt_recursion(int n)
