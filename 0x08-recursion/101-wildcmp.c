@@ -8,6 +8,13 @@
  */
 int wildcmp(char *s1, char *s2)
 {
+	int ss1 = strlen(s1);
+	int ss2 = strlen(s2);
+
+	if (s2[ss2 - 1] = *)
+		return (1);
+	if (s1[ss1 - 1] != s2[ss2 - 1])
+		return (0);
 	if (*s2 == '*')
 		return (1);
 	if (*s1 == '\0' && *s2 == '\0')
