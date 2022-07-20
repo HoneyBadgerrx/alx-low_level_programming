@@ -13,5 +13,6 @@ int _strlen_recursion(char *s);
 int factorial(int n);
 int _sqrt_recursion(int n);
 int helperfunc(int n, int root);
+int _pow_recursion(int x, int y);
 
 #endif /* main_h */
