@@ -9,7 +9,8 @@
  */
 int main(int argc, char **argv)
 {
-	int num, counter;
+	int num, counter, c = 0;
+	int change[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -25,32 +26,12 @@ int main(int argc, char **argv)
 	}
 	while (num != 0)
 	{
-		++counter;
-		if (num >= 25)
+		while (num >= change[c])
 		{
-			num -= 25;
-			continue;
+			num -= change[c];
+			counter++;
 		}
-		if (num >= 10)
-		{
-			num -= 10;
-			continue;
-		}
-		if (num >= 5)
-		{
-			num -= 5;
-			continue;
-		}
-		if (num >= 2)
-		{
-			num -= 2;
-			continue;
-		}
-		if (num >= 1)
-		{
-			num -= 1;
-			continue;
-		}
+		++c;
 	}
 	printf("%d\n", counter);
 	return (0);
