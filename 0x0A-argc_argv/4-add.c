@@ -1,19 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - print arg name
+ * main - adds positive integers
  *
- * @argc: program count
- * @argv: program arg
- * Return: 0 on success
+ * @argc: number of arguments
+ * @argv: commandline arguments
+ * Return: 0 if successfyl
  */
 int main(int argc, char **argv)
 {
-	if (argc < 3)
+	int i, j, sum = 0;
+
+	if (argc == 1)
 	{
-		printf("Error\n");
+		printf("0\n");
 		return (1);
 	}
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	for (i = 1; i < argc; ++i)
+	{
+		j = 0;
+		while (argv[i][j])
+		{
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+			++j;
+		}
+		sum += atoi(argv[i]);
+	}
+	printf("%d\n", sum);
 	return (0);
 }
