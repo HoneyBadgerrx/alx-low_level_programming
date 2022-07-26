@@ -23,17 +23,23 @@ char *str_concat(char *s1, char *s2)
 	p = malloc(sizeof(char) * total);
 	if (p == NULL)
 		return (NULL);
-	while (*s1 && s1 != NULL)
+	if (s1 != NULL)
 	{
-		p[i] = *s1;
-		++i;
-		++s1;
+		while (*s1)
+		{
+			p[i] = *s1;
+			++i;
+			++s1;
+		}
 	}
-	while (*s2 && s2 != NULL)
+	if (s2 != NULL)
 	{
-		p[i] = *s2;
-		++i;
-		++s2;
+		while (*s2)
+		{
+			p[i] = *s2;
+			++i;
+			++s2;
+		}
 	}
 	p[i] = '\0';
 	return (p);
