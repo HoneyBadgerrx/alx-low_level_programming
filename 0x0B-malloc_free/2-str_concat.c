@@ -12,12 +12,12 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 
 	if (s1 == NULL)
-		*s1 = "";
+		*s1 = '\0';
 	if (s2 == NULL)
-		*s2 = "";
+		*s2 = '\0';
 	size = strlen(s1) + strlen(s2) + 1;
 	p = malloc(sizeof(char) * size);
-	if (p = NULL)
+	if (p == NULL)
 		return (NULL);
 	while (*s1)
 	{
@@ -32,4 +32,5 @@ char *str_concat(char *s1, char *s2)
 		++s1;
 	}
 	p[i] = '\0';
+	return (p);
 }
