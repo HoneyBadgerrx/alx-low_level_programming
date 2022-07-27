@@ -14,15 +14,18 @@ char **strtow(char *str)
 		return (NULL);
 	for (i = 0; str[i]; ++i)
 	{
+		if (word > maxword)
+			maxword = word;
 		if (str[i] == ' ')
 		{
-			maxword = word;
 			word = 0;
 			++wordcount;
 			continue;
 		}
 		word++;
 	}
+	if (word > maxword)
+		maxword = word;
 	p = (char **)malloc(wordcount * sizeof(char *));
 	if (p == NULL)
 		return (NULL);
