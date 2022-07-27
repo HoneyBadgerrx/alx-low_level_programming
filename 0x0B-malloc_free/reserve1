@@ -7,7 +7,7 @@
  */
 char **strtow(char *str)
 {
-	int i, j, maxword = 0, word = 0, wordcount = 1;
+	int i, j, maxword, word = 0, wordcount = 1;
 	char **p;
 
 	if (str == NULL || *str == '\0')
@@ -31,7 +31,7 @@ char **strtow(char *str)
 		return (NULL);
 	for (i = 0; i < wordcount; ++i)
 	{
-		p[i] = (char *)malloc(1 + maxword * sizeof(char));
+		p[i] = (char *)malloc(maxword * sizeof(char));
 		if (p[i] == NULL)
 		{
 			for (j = 0; j < i; ++j)
@@ -44,7 +44,11 @@ char **strtow(char *str)
 			if (*str == ' ')
 			{
 				++str;
-				p[i][j] = '\0';
+				while (j < maxword)
+				{
+					p[i][j] = '\0';
+					++j;
+				}
 				break;
 			}
 			p[i][j] = *str;
