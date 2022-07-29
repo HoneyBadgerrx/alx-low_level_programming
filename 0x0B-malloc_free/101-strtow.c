@@ -38,7 +38,7 @@ char **strtow(char *str)
 			free(p);
 			return (NULL);
 		}
-		for (j = 0; j <= maxword + 1; ++k, ++j)
+		for (j = 0; j <= maxword + 1; ++j)
 		{
 			if (str[k] == ' ' || str[k] == '\0')
 			{
@@ -47,6 +47,7 @@ char **strtow(char *str)
 				break;
 			}
 			p[i][j] = str[k];
+			++k;
 		}
 	}
 	return (p);
