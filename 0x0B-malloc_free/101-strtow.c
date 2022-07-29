@@ -7,7 +7,7 @@
  */
 char **strtow(char *str)
 {
-	int i, j, k = 0, maxword = 0, word = 0, wordcount = 1;
+	int i = 0, j = 0, k = 0, maxword = 0, word = 0, wordcount = 1;
 	char **p;
 
 	if (str == NULL || *str == '\0')
@@ -24,14 +24,13 @@ char **strtow(char *str)
 		}
 		word++;
 	}
-	if (word > maxword)
-		maxword = word;
 	p = (char **)malloc(wordcount * sizeof(char *));
 	if (p == NULL)
 		return (NULL);
+	maxword++;
 	for (i = 0; i < wordcount; ++i)
 	{
-		p[i] = (char *)malloc(1 + (maxword * sizeof(char)));
+		p[i] = malloc(maxword * sizeof(char));
 		if (p[i] == NULL)
 		{
 			for (j = 0; j < i; ++j)
@@ -39,24 +38,16 @@ char **strtow(char *str)
 			free(p);
 			return (NULL);
 		}
-		for (j = 0; j < maxword; ++j)
+		for (j = 0; j <= maxword + 1; ++k, ++j)
 		{
-			printf("%c\n", str[k]);
-			if (str[k] == ' ')
+			if (str[k] == ' ' || str[k] == '\0')
 			{
-				++k;
+				k++;
 				p[i][j] = '\0';
 				break;
 			}
 			p[i][j] = str[k];
-			++k;
 		}
 	}
 	return (p);
-}
-void main(void)
-{
-	int i = 0;
-	char **p = strtow("Final test ot trsts");
-	printf("%s\n", p[1]);
 }
