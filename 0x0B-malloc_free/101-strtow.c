@@ -16,11 +16,11 @@ char **strtow(char *str)
 	{
 		if (word > maxword)
 			maxword = word;
-		if (str[i] == ' ')
+		while (str[i] == ' ')
 		{
 			word = 0;
 			++wordcount;
-			continue;
+			++i;
 		}
 		word++;
 	}
@@ -40,7 +40,7 @@ char **strtow(char *str)
 		}
 		for (j = 0; j <= maxword + 1; ++j)
 		{
-			if (str[k] == ' ' || str[k] == '\0')
+			while (str[k] == ' ' || str[k] == '\0')
 			{
 				k++;
 				p[i][j] = '\0';
