@@ -43,7 +43,6 @@ char **strtow(char *str)
 		}
 		for (j = 0; j <= maxword + 1; ++j)
 		{
-			printf("%c\n", str[k]);
 			if (str[k] == ' ' || str[k] == '\0')
 			{
 				while (str[k] == ' ' || str[k] == '\0')
