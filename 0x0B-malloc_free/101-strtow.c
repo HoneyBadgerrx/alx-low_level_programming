@@ -58,3 +58,10 @@ char **strtow(char *str)
 	}
 	return (p);
 }
+void main(void)
+{
+	char **p = strtow(" Talk is cheap. Show me the code. ");
+	int i = 0;
+	for (i = 0; i < 7; ++i)
+		printf("%s\n", p[i]);
+}
