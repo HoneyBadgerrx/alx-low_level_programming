@@ -1,11 +1,7 @@
-#ifndef main_h
-#define main_h
-
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#ifndef FUNCP_h
+#define FUNCP_h
 
 int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
 
-#endif /* main_h */
+#endif /* funcp_h */
