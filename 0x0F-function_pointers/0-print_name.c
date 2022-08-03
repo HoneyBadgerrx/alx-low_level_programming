@@ -6,7 +6,9 @@
  */
 void printer(char *name)
 {
-	printf("Hello, my name is %s\n", name);
+	int i;
+	for (i = 0; name[i]; ++i)
+		_putchar(name[i]);
 }
 /**
  * print_name - calls printer function
