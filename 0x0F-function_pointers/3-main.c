@@ -8,6 +8,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b, ans;
+	int (*f)(int, int);
 
 	if (argc != 4)
 	{
@@ -15,23 +16,24 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	if (
-		argv[2] != "+" &&
-		argv[2] != "-" &&
-		argv[2] != "/" &&
-		argv[2] != "%" &&
-		argv[2] != "*")
+		strcmp(argv[2], "+") != 0 &&
+		strcmp(argv[2], "-") != 0 &&
+		strcmp(argv[2], "/") != 0 &&
+		strcmp(argv[2], "%") != 0 &&
+		strcmp(argv[2], "*") != 0)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if ((argv[2] == "/" && argv[3] == "0") || (argv[2] == "%" && argv[3] == "0"))
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	if ((strcmp(argv[2], "/") == 0 && b == 0) || (strcmp(argv[2], "%") == 0 && b == 0))
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	ans = get_op_func(a, b);
+	f = get_op_func(argv[2]);
+	ans = f(a, b);
 	printf("%d\n", ans);
 	return (0);
 }
