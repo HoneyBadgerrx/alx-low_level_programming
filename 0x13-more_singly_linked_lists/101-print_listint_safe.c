@@ -16,11 +16,11 @@ size_t print_listint_safe(const listint_t *head)
 	i = head->next;
 	while (i != NULL)
 	{
-		if (i == head)
-			break;
 		printf("%d\n", i->n);
-		i = i->next;
 		count++;
+		if (i->next == head)
+			break;
+		i = i->next;
 	}
 	return (count);
 }
