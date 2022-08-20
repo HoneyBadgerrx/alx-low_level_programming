@@ -1,5 +1,24 @@
 #include "main.h"
 /**
+ * _pow - finds exponent of base
+ * @base: number to be exp
+ * @exp: exp number
+ * Return: result of exp
+ */
+unsigned int _pow(int base, unsigned int exp)
+{
+	int result = base;
+
+	while (exp > 1)
+	{
+		result *= base;
+		--exp;
+	}
+	if (exp == 0)
+		return (1);
+	return (result);
+}
+/**
  * get_bit - gets bit at index
  * @n: bits to check
  * @index: index of required bit
