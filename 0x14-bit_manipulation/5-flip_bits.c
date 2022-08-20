@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _pow - finds exponent of base
+ * _powu - finds exponent of base
  * @base: number to be exp
  * @exp: exp number
  * Return: result of exp
  */
-unsigned int _pow(int base, unsigned int exp)
+unsigned long int _powu(int base, unsigned int exp)
 {
-	int result = base;
+	unsigned long int result = base;
 
 	while (exp > 1)
 	{
