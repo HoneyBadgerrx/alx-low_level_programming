@@ -26,7 +26,7 @@ unsigned long int _powu(int base, unsigned int exp)
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int i = _pow(2, sizeof(unsigned long int) * 8 - 1);
+	unsigned long int i = _powu(2, sizeof(unsigned long int) * 8 - 1);
 	unsigned int count = 0;
 
 	while (i != 0)
