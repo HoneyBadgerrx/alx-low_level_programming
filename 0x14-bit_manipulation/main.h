@@ -13,5 +13,6 @@ int set_bit(unsigned long int *n, unsigned int index);
 int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 unsigned long int _powu(int base, unsigned int exp);
+int get_endianness(void);
 
 #endif /* main_h */
