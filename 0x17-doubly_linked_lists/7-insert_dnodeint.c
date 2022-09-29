@@ -4,11 +4,11 @@
 
 
 /**
- * insert_dnodeint_at_index - inserts a new node atidx 
+ * insert_dnodeint_at_index - inserts a new node atidx
  * @h: double pointer to head
  * @idx: index
  * @n: value
- * Return: new node or NULL 
+ * Return: new node or NULL
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
