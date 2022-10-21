@@ -7,8 +7,9 @@
  */
 hash_node_t *node_create(const char *key, const char *value)
 {
-	hash_node_t *p = malloc(sizeof(hash_node_t));
+	hash_node_t *p;
 
+	p = malloc(sizeof(hash_node_t));
 	if (p == NULL)
 		return (NULL);
 	p->key = strdup(key);
@@ -29,7 +30,7 @@ hash_node_t *node_create(const char *key, const char *value)
 }
 /**
  * hash_table_set - sets key and value
- * @ht: hash table 
+ * @ht: hash table
  * @key: key
  * @value: value
  * Return: 1 if successful, 0 otherwise
@@ -47,7 +48,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (j == NULL)
 	{
 		new_node = node_create(key, value);
-		j = new_node;
+		if (new_node == NULL)
+			return (0);
+		ht->array[index] = new_node;
 		return (1);
 	}
 	else
@@ -66,9 +69,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			}
 		}
 	}
-	j = ht->array[index];
 	new_node = node_create(key, value);
-	new_node->next = j;
-	j = new_node;
+	if (new_node == NULL)
+		return (0);
+	new_node->next = ht->array[index];
+	ht->array[index] = new_node;
 	return (1);
 }
