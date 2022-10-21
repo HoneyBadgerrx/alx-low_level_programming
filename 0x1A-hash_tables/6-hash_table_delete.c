@@ -6,7 +6,7 @@
  */
 void free_list(hash_node_t *head)
 {
-	hash_node_t *i = head, *next;
+	hash_node_t *i = head, *next = head;
 
 	while (next)
 	{
